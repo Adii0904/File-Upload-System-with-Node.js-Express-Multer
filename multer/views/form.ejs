@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="mt-2 mx-auto w-1/2">
+      <form
+        action="/submitform"
+        method="post"
+        class="space-y-4"
+        enctype="multipart/form-data"
+      >
+        <div>
+          <label for="">Enter The Text</label>
+          <input
+            type="text"
+            name="username"
+            id="text-data"
+            class="border border-md"
+          />
+        </div>
+        <div class="bg-blue-100">
+          <label for="">Upload the file</label>
+          <input multiple="multiple" type="file" name="userfile" />
+        </div>
+        <button class="bg-blue-400 px-2 py-1">Send</button>
+      </form>
+    </section>
+  </body>
+</html>
